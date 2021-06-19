@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cooking master</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="full-website">
+    <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cooking Master</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Recipes</a>
+                    <a class="nav-link disabled" href="#" >Blog</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </div>
+      </header>
+      <section>
+          <div class="container"> 
+              <div class="input-group">
+                <input type="text" id='search' placeholder="Enter the first letter of meal name" name="search" class='form-control search_btn' >
+                <button onclick="handleSearchMeal()" type='button' class='btn btn-info'>Search</button>
+               </div>
+
+               <div id="food-area">
+                  <div id="food-detail">
+
+                  </div>
+                   <div id="food-content" class="row">
+
+                   </div>
+               </div>
+            </div>
+      </section>
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
